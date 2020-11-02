@@ -10,7 +10,6 @@ import React from 'react'
 import { GitHubRepoSearchResultItem } from './interfaces'
 import GitRepoIcon from './GitRepoIcon'
 import StarGazers from '../StarGazers'
-import Watchers from '../Watchers'
 import { Link } from 'react-router-dom'
 
 interface Props {
