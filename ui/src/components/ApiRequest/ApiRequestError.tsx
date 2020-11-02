@@ -4,6 +4,8 @@ interface Props {
   error: Error
 }
 
-const ApiRequestError = ({ error }: Props) => <div>{error.message}</div>
+const ApiRequestError = ({ error }: Props) => (
+  <div data-testid="request-error">{error.message}</div>
+)
 
 export default ApiRequestError

@@ -19,8 +19,8 @@ const ApiRequest = ({
   const [data, setData] = useState<Record<string, unknown> | null>(null)
   const [error, setError] = useState<Error | null>(null)
 
-  const handleSuccess = (result: Record<string, unknown> | null) => {
-    setData(result)
+  const handleSuccess = (result?: Record<string, unknown> | null) => {
+    setData(result || null)
   }
 
   const handleError = (result: Error) => setError(result)

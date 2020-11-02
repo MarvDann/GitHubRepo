@@ -18,13 +18,18 @@ const request = (
 }
 
 const buildHandleResponse = (
-  handleSuccess: (data: Record<string, unknown>) => void,
+  handleSuccess: (data: Record<string, unknown> | null) => void,
   handleError: (error: Error) => void
 ) => {
   return async (response: Response) => {
-    const result = await response.json()
-
-    response.ok ? handleSuccess(result) : handleError(result)
+    try {
+      const result = await response.json()
+      response.ok ? handleSuccess(result) : handleError(result)
+    } catch {
+      response.ok
+        ? handleSuccess({ message: 'OK' })
+        : handleError(new Error(response.statusText))
+    }
     return Promise.resolve()
   }
 }

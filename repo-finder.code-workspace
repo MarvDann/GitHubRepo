@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "api"
+    },
+    {
+      "path": "ui"
+    }
+  ],
+  "settings": {
+    "git.ignoreLimitWarning": true
+  }
+}
