@@ -12,6 +12,7 @@ ui/node_modules/
 
 # production
 api/build/
+ui/build/
 
 # misc
 .DS_Store

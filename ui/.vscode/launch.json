@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "Debug UI",
       "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}/ui"
+      "webRoot": "${workspaceFolder}"
     }
   ]
 }

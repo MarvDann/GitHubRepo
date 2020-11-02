@@ -8,6 +8,5 @@ test('renders search form', () => {
   }
 
   render(<GitRepoSearchForm {...props} />)
-  const button = screen.getByRole('button')
-  expect(button).toBeInTheDocument()
+  screen.getByRole('button')
 })

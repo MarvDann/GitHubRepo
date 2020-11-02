@@ -15,6 +15,7 @@ import { Link } from 'react-router-dom'
 interface Props {
   item: GitHubRepoSearchResultItem
 }
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
